@@ -14,6 +14,34 @@ jobs:
       - name: install dependencies
         run: npm install
       - name: run unit tests
-        run: npm test
+        run: npm test        const fs = require('fs');
+        const path = require('path');
+        
+        function init(location) {
+            const dirName = path.dirname(location);
+            // if (!fs.existsSync(dirName)) {
+            //     fs.mkdirSync(dirName, { recursive: true });
+            // }
+        
+            return new Promise((acc, rej) => {
+                // SQLite DB 初期化コード
+            });
+        }
+        
+        module.exports = { init };        const fs = require('fs');
+        const path = require('path');
+        
+        function init(location) {
+            const dirName = path.dirname(location);
+            // if (!fs.existsSync(dirName)) {
+            //     fs.mkdirSync(dirName, { recursive: true });
+            // }
+        
+            return new Promise((acc, rej) => {
+                // SQLite DB 初期化コード
+            });
+        }
+        
+        module.exports = { init };
         env:
-          SQLITE_DB_Location: ./tmp/todo.db
+          SQLITE_DB_LOCATION: ./tmp/todo.db
