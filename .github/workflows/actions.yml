@@ -16,4 +16,4 @@ jobs:
       - name: run unit tests
         run: npm test
         env:
-          SQLITE_DB_Rocation: ./tmp/todo.db
+          SQLITE_DB_Location: ./tmp/todo.db
